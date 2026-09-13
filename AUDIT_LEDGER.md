@@ -138,3 +138,20 @@ authorized the final record refresh and candidate checks. Root updated current
 status records; earlier ledger entries remain historical. Paper, figure, code,
 proofs, and scoped audit dispositions are unchanged. No authenticated portal
 inspection is claimed. Exact tag/Release authorization remains pending.
+
+## Archive verification and living DOI metadata
+
+The authorized v0.1.0 tag points to 8ce97341f77cf3c406c9a2909fc77ac6be085e8e.
+Root pinned two identical GitHub zipballs before publishing the GitHub Release.
+Zenodo accepted the released event and minted version DOI 10.5281/zenodo.22731697.
+The provider file equals the pinned zipball byte-for-byte and its internal
+manifest passes. The archived-state audit returned 11 passes, no warnings or
+failures. Zenodo initially classified the record as Software; the user changed
+it to Publication / Preprint, and root verified the public correction. The file
+ID, size and checksum were unchanged. Expanded license metadata is GPL-3.0-only.
+
+Root then prepared the living DOI/status updates. General mathematical text,
+figure and scoped evidence are unchanged. P1 remains PARTIAL, with the explicit
+priority residual retained. No user-owned portal or email tool was used. The
+clean admitted-state audit is run after the local metadata commit; its result
+is reported outside that commit to avoid a circular final-check record.

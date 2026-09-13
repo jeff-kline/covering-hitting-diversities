@@ -53,3 +53,14 @@ The exact local commit and candidate audit result are delivered separately.
 A later living-metadata/site admission bundle must state its exact commit and
 approved actions after archive verification. P1's residual uncertainty remains
 visible throughout.
+
+## Completed freeze and next publication boundary
+
+The exact authorized commit 8ce97341f77cf3c406c9a2909fc77ac6be085e8e was pushed,
+tagged v0.1.0, and released. The Zenodo archive is publicly verified at
+https://doi.org/10.5281/zenodo.22731697; ADMISSION.md records the checksums and
+corrected metadata. The earlier sequence above is the retained freeze plan.
+
+The next bundle is limited to the exact reviewed living-metadata commit pushed
+to main. It does not move the tag, replace archive bytes, or publish a site.
+The user authorized local preparation; the exact push is presented separately.

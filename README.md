@@ -1,7 +1,6 @@
 # Covering versus hitting in diversity embeddings: an affine obstruction and matching bounds
 
-**Version 0.1.0 — local release candidate. Not yet admitted or published.**
-No tag, permanent archive, or DOI exists for this release.
+Version 0.1.0 — admitted with stated qualifications. [Version DOI](https://doi.org/10.5281/zenodo.22731697).
 
 A diversity, introduced by Bryant and Tupper in
 [*Hyperconvexity and tight-span theory for diversities*](https://doi.org/10.1016/j.aim.2012.08.008)
@@ -116,13 +115,21 @@ referee, or source of authority. Jeff Kline takes responsibility for the work.
 ## Citation and status
 
 Jeff Kline. *Covering versus hitting in diversity embeddings: an affine
-obstruction and matching bounds*. Version 0.1.0, release candidate, 2026.
-The candidate is public in `jeff-kline/covering-hitting-diversities`.
-An immutable release and permanent citation are pending. The author has
-confirmed that Zenodo GitHub integration is enabled; tagging and release
-publication await exact freeze authorization.
-Admission under the [public research standard](https://jeff-kline.github.io/posts/research-program/index.html)
-is a project release decision, not a correctness certificate or proof of novelty.
+obstruction and matching bounds*. Version 0.1.0, September 13, 2026.
+[Version DOI: 10.5281/zenodo.22731697](https://doi.org/10.5281/zenodo.22731697).
+[Immutable release v0.1.0](https://github.com/jeff-kline/covering-hitting-diversities/releases/tag/v0.1.0).
+
+Admitted under the [public research standard](https://jeff-kline.github.io/posts/research-program/index.html)
+with the stated scope and residual uncertainty: P1 remains PARTIAL because
+priority of the precise compact contribution is unresolved. Admission is a
+project release decision, not peer review, a correctness certificate, or proof
+of novelty. See [ADMISSION.md](ADMISSION.md).
+
+The immutable tag and archive retain release-candidate wording. This living
+repository adds the verified DOI and publication status; the mathematical
+content and archived files have not changed. The concept DOI
+[10.5281/zenodo.22731696](https://doi.org/10.5281/zenodo.22731696) resolves to the
+version family; use the version DOI above for reproducible citation.
 
 ## License
 

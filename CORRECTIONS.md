@@ -1,6 +1,6 @@
 # Corrections and version history
 
-Report suspected errors through the repository issue tracker once it is public.
+Report suspected errors through the repository issue tracker.
 Jeff Kline is responsible for assessing reports and maintaining this record.
 
 Corrections will name the affected version and claim, explain the error and its
@@ -42,3 +42,13 @@ and exact enumeration. Removed the filled triangle because the cut is a set
 of points. The finite maximum 3/2 is now checked over all 512 subsets; it is
 separate from the general moment certificate (2q-1)/q. No general theorem or
 proof was changed. The PDF now has eleven pages.
+
+## 0.1.0 publication and living metadata — September 13, 2026 UTC
+
+Published immutable tag v0.1.0 and verified the archive at
+https://doi.org/10.5281/zenodo.22731697. The user corrected Zenodo's initial
+Software classification to Publication / Preprint; archived file bytes did
+not change. The living README, CFF and paper now carry the active version DOI
+and publication status. The tag retains its original release-candidate wording.
+No mathematical content or prior-work qualification changed. Admission retains
+P1 PARTIAL and the unresolved compact-construction priority question.

@@ -1,6 +1,6 @@
 # Local verification record
 
-Checked September 13, 2026 UTC. Scope: local release candidate, not admission.
+Checked September 13, 2026 UTC. Scope: verified archive and living publication metadata; historical checks retain their original scope.
 
 Environment: macOS; Python 3.9.6 at /usr/bin/python3; pdfTeX
 3.141592653-2.6-1.40.22 (TeX Live 2021/MacPorts 2021.58693_2), kpathsea 6.3.3,
@@ -23,7 +23,7 @@ pdftoppm -r 90 -png paper/main.pdf build/pages/page
 
 Build result: two clean two-pass builds were byte-identical. Final logs contained
 no warnings, undefined references, or overfull/underfull boxes. PDF: 11 US Letter
-pages, 354426 bytes; 14 cited references. Title and author PDF metadata agree.
+pages, 355420 bytes; 14 cited references. Title and author PDF metadata agree.
 The source date fixes PDF creation metadata to September 13, 2026 00:00 UTC;
 it is not a release date. Rendered pages 1–11 were individually inspected by root:
 no clipping, overlap, broken mathematical glyphs, or displaced radicals observed.
@@ -31,9 +31,9 @@ The bibliography occupies page 11. TeX reading order in extracted text is not
 used as a substitute for rendered inspection.
 
 Paper source SHA-256:
-`8ef19cd8b90ad3ba7dc30340f8ad21aee533c526fef08e086c3b90b0f834ffdc`.
+`b9fcb81461bbfe666c69806c5b83eac298275f9cc53397cd52c75dfa3e2a28b9`.
 PDF SHA-256:
-`4073aa822ca291f68c94a0e148ca3f92e10216cc6ad6065b148d3cf799fa72ed`.
+`118e9f4aafddbbbedf7c69685ad537b98f8a00736e38d59e6edc0ccd1499d629`.
 
 The project checker verifies the P07 proof region (excluding the declared figure input), two original initial
 seals, the 14/14 citation-key bijection, and complete tracked manifest coverage.
@@ -98,3 +98,19 @@ The general moment constant is (2q-1)/q, equal to 5/3 only at q=3.
 See audit/Q3-FIGURE.md for the separate finite check and its exposure limits.
 The general theorem/proof text remains identical after removing only the
 single declared figure-input line from the continuity comparison.
+
+## Living DOI metadata after archive verification
+
+The DOI-bearing paper builds identically in two clean two-pass compilations,
+without final warnings. Pages 1 and 2 were rendered and inspected, including
+the centered title and DOI line; pages 3–11 are pixel-identical to the archived
+paper at 72 dpi. Mathematical source, figure and bibliography are unchanged.
+The active version DOI is 10.5281/zenodo.22731697. Publication date is September
+13, 2026; build metadata continues to use the documented fixed source epoch.
+
+The unchanged archived tree passed its archived-state audit: 11 passes, no
+warnings or failures. The provider resource type correction was separately
+verified as Publication / Preprint, with unchanged file identity and checksum.
+The clean living tree is checked with --state admitted after committing; the
+final result and commit are reported outside the commit. ADMISSION.md records
+the provider and GitHub byte-identity evidence and qualified verdict.
