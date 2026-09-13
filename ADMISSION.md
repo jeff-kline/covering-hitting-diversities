@@ -1,9 +1,10 @@
 # Release gates
 
 Current verdict: NOT YET ADMITTED.
-State: local CANDIDATE, version 0.1.0; proposed tag v0.1.0 does not yet exist.
+State: CANDIDATE, version 0.1.0; proposed tag v0.1.0 does not yet exist.
 The candidate repository is public. No tag, permanent archive, or DOI has
-been created for this release; the local revisions await publication.
+been created for this release. Paper and figure revisions through 6e57036
+are public on main. This release-record refresh is prepared locally.
 
 Standard: [A Public Standard for This Work](https://jeff-kline.github.io/posts/research-program/index.html),
 version 0.4 draft, read completely during preparation on September 13, 2026 UTC.
@@ -15,7 +16,7 @@ certificate, or proof of global novelty.
 |---|---|---|
 | P1: prior work and credit | PARTIAL | Closest mechanisms and exact public sources compared; compact-construction priority remains unresolved. No first existential bound or new constant claimed. See audit/PRIOR_WORK.md. |
 | A1: claim and artifact consistency | PASS | README, abstract, introduction and metadata agree; proof-region continuity apart from declared illustration input; scoped proof-aware review, separate finite-example check, and eleven-page rendered inspection. See AUDIT_LEDGER.md and VERIFICATION.md. |
-| R1: release and stewardship | PARTIAL | Local build, citation, provenance, manifest and correction policy prepared; updated public candidate/tag/archive/DOI and provider byte verification remain undone. |
+| R1: release and stewardship | PARTIAL | Local build, citation, provenance, manifest and correction policy prepared; final record push/tag/archive/DOI and provider byte verification remain undone. |
 
 ## P1 rows
 
@@ -43,8 +44,9 @@ PASS: added finite q=3 maximum is exhaustively checked and separately audited.
 PASS: reproducible local build and complete tracked-file manifest.
 PASS: visible correction/withdrawal/supersession policy and publication-safe CFF.
 PASS: selected evidence provenance; no exploratory campaign bundle or source PDFs.
-PASS: public repository created and original candidate published with authorization.
-PARTIAL: publication of local revisions, immutable tag, GitHub
+PASS: public repository and paper/figure revisions through 6e57036 published with authorization.
+PASS: author confirmed Zenodo GitHub integration enabled.
+PARTIAL: final release-record push, immutable tag, GitHub
 Release, archive metadata, resolving version DOI and provider byte identity.
 PASS: exact 512-subset reproduction suite for the added finite illustration.
 General results continue to rest on proofs.
@@ -54,8 +56,8 @@ admission bundle after archive verification, not implicit authorization here.
 ## Execution boundary and archive route
 
 Selected preparation route: Zenodo GitHub integration. No manual deposit or
-reserved DOI is used. The author must enable the repository in Zenodo before
-the GitHub Release. The provider comparison target will be the GitHub API tag
+reserved DOI is used. The author has confirmed that the repository is enabled in Zenodo.
+This records user confirmation, not agent inspection of the authenticated portal. The provider comparison target will be the GitHub API tag
 zipball downloaded twice and pinned before creating the Release. Separately,
 generate git archive of the tag twice; do not equate those bytes to the zipball.
 

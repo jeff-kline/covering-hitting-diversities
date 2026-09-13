@@ -51,9 +51,9 @@ This mechanical check does not judge proofs or close P1/R1.
 
 Excluded: exploratory numerical tests, source-workspace campaigns, third-party
 PDFs, build logs and rendered images (ignored build/), and authenticated portals.
-The selected P07 reports are reused only with their original scopes. The original candidate was publicly pushed with authorization. These later local
-revisions have not been pushed; no tag, archive upload, DOI activation, or site
-deployment was performed.
+The selected P07 reports are reused only with their original scopes. The candidate and paper/figure revisions through 6e57036 were publicly pushed
+with authorization. This release-record refresh is local; no tag, archive upload,
+DOI activation, or site deployment was performed.
 
 ## Title-alignment correction
 

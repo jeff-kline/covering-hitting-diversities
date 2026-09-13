@@ -116,9 +116,11 @@ referee, or source of authority. Jeff Kline takes responsibility for the work.
 ## Citation and status
 
 Jeff Kline. *Covering versus hitting in diversity embeddings: an affine
-obstruction and matching bounds*. Version 0.1.0, local release candidate, 2026.
-There is no permanent citation yet. The proposed repository is
-`jeff-kline/covering-hitting-diversities`; publication awaits authorization.
+obstruction and matching bounds*. Version 0.1.0, release candidate, 2026.
+The candidate is public in `jeff-kline/covering-hitting-diversities`.
+An immutable release and permanent citation are pending. The author has
+confirmed that Zenodo GitHub integration is enabled; tagging and release
+publication await exact freeze authorization.
 Admission under the [public research standard](https://jeff-kline.github.io/posts/research-program/index.html)
 is a project release decision, not a correctness certificate or proof of novelty.
 

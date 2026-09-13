@@ -128,3 +128,13 @@ This is separate finite-example verification, not a general proof audit or
 independent expert review. Root owns the edits and disposition. General
 proof-region continuity excludes exactly the declared figure-input line;
 the added finite claim does not alter the general bounds or novelty scope.
+
+## Freeze preparation after candidate push
+
+The user authorized publication of the three paper/figure revision commits;
+GitHub main was verified at 6e5703639bacd6d8c22135cc4922cc091a7e4a9d.
+The user subsequently confirmed Zenodo GitHub integration is enabled and
+authorized the final record refresh and candidate checks. Root updated current
+status records; earlier ledger entries remain historical. Paper, figure, code,
+proofs, and scoped audit dispositions are unchanged. No authenticated portal
+inspection is claimed. Exact tag/Release authorization remains pending.

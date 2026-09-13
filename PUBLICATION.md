@@ -1,7 +1,7 @@
 # Publication checkpoint
 
-Proposed repository: `jeff-kline/covering-hitting-diversities` (public).
-Proposed default branch: `main`. Proposed annotated tag: `v0.1.0`.
+Repository: `jeff-kline/covering-hitting-diversities` (public).
+Default branch: `main`. Proposed annotated tag: `v0.1.0`.
 Title: Covering versus hitting in diversity embeddings: an affine obstruction and matching bounds.
 Creator: Jeff Kline. Version: 0.1.0. License: GPL-3.0-only.
 Resource type for permanent archive: publication / preprint.
@@ -22,17 +22,17 @@ Resource type for permanent archive: publication / preprint.
 ## Selected route: Zenodo GitHub integration
 
 Do not create a manual deposit or reserve a separate DOI. The CFF message is
-timeless and omits DOI and date-released. The user must enable this repository
-in Zenodo before the GitHub Release; no agent opens the authenticated portal.
+timeless and omits DOI and date-released. The user confirmed that this repository is enabled in Zenodo. This is
+user-reported setup; no agent inspected the authenticated portal.
 If the route changes to manual upload, rebuild and re-audit a new candidate
 with the user-reserved identifier visibly inactive before any immutable tag.
 
 The proposed freeze bundle is limited to the following actions, at the exact
 candidate commit presented to the user:
 
-1. Recheck the local and authenticated GitHub name and create the public repository.
-2. Push the audited candidate to main. Do not force-push over unexpected state.
-3. Wait for the user's confirmation that Zenodo integration is enabled.
+1. Verify the existing public repository and remote main against the reviewed base.
+2. Push the audited final candidate to main. Do not force-push over unexpected state.
+3. Retain the author's confirmation that Zenodo integration is enabled.
 4. Create and push the annotated v0.1.0 tag at that exact commit using the
    established GitHub noreply identity; never move a public tag.
 5. Generate git archive v0.1.0 twice and compare bytes. Download the canonical
@@ -43,12 +43,10 @@ candidate commit presented to the user:
    download its file, and compare it byte-for-byte to the pinned GitHub zipball.
 
 Before requesting public authorization, inspect author and committer identities
-for every outgoing commit. This is an initial repository with no remote base:
-check all history using git log --format=fuller and validate both address fields
-against the established noreply identity. The bundled release auditor's
---publish-base check is usable once a real remote base exists; do not invent one
-or silently omit the initial commit from identity review. Inspect an annotated
-tagger before pushing when the tag exists.
+for every outgoing commit. This repository now has an actual origin/main base:
+use the bundled release auditor with --publish-base origin/main and
+--require-github-noreply. Initial publication identities were checked separately
+before the first push. Inspect the annotated tagger before pushing the tag.
 
 No public action is covered merely by this plan or the local preparation request.
 The exact local commit and candidate audit result are delivered separately.
