@@ -102,3 +102,16 @@ The prior candidate commit was pushed to the public repository with user
 authorization. This typography correction is prepared locally and needs exact
 updated publication authorization before pushing or tagging the new commit.
 Zenodo integration confirmation is still pending; no tag or Release exists.
+
+## First-use terminology and attribution — September 13, 2026 UTC
+
+At the user's request, root clarified that a diversity generalizes a metric
+and credited Bryant and Tupper at first use. Added their original 2012 paper,
+Hyperconvexity and tight-span theory for diversities, DOI
+10.1016/j.aim.2012.08.008, as bibliography item BT12; arXiv:1006.1095 records
+the 2010 preprint and confirms the publication metadata. The author abstract
+expressly introduces the concept. This is an exposition/credit edit, not a
+mathematical change or expanded novelty claim. README and introduction agree.
+Root rechecked the affected rendering and the 14/14 citation bijection; the
+protected proof region remains identical. No public push, tag, or Release
+is authorized by this local correction alone.

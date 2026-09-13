@@ -33,7 +33,7 @@ on another installation requires inspection, not automatic replacement of the
 recorded artifact. Do not regenerate MANIFEST.sha256 merely to hide a mismatch.
 
 Verification checks the P07 proof-region identity, both original initial seals,
-the 13 citation keys, all tracked-file hashes, and staged/unstaged Git whitespace.
+the 14 citation keys, all tracked-file hashes, and staged/unstaged Git whitespace.
 In an extracted archive without .git, make verify instead checks all regular
 files against the manifest; ignored build/, __pycache__, and .DS_Store are
 excluded. It skips Git history/whitespace checks there. Both modes reject

@@ -28,3 +28,9 @@ The public candidate's subtitle was shifted right. Corrected the LaTeX title
 line break and rebuilt the PDF; no mathematical text changed. The first
 visual review missed this defect. The previous public commit remains in Git
 history; no tag or permanent archive had been created.
+
+## Pre-tag terminology clarification — September 13, 2026 UTC
+
+Clarified the opening description of a diversity as a generalization of a
+metric and added first-use credit to Bryant and Tupper's original 2012 paper.
+Updated the README to match. No theorem or proof changed.

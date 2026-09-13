@@ -23,7 +23,7 @@ pdftoppm -r 90 -png paper/main.pdf build/pages/page
 
 Build result: two clean two-pass builds were byte-identical. Final logs contained
 no warnings, undefined references, or overfull/underfull boxes. PDF: 10 US Letter
-pages, 249395 bytes; 13 cited references. Title and author PDF metadata agree.
+pages, 249789 bytes; 14 cited references. Title and author PDF metadata agree.
 The source date fixes PDF creation metadata to September 13, 2026 00:00 UTC;
 it is not a release date. Rendered pages 1–10 were individually inspected by root:
 no clipping, overlap, broken mathematical glyphs, or displaced radicals observed.
@@ -31,12 +31,12 @@ The bibliography occupies page 10. TeX reading order in extracted text is not
 used as a substitute for rendered inspection.
 
 Paper source SHA-256:
-`310253b48026306a2dfb43f703091343992bb315767d56461653e501df5938a4`.
+`6fe05e3d8688e8b56549e4a5152803eb027fa48b2c6d94367221d4d86f2cba38`.
 PDF SHA-256:
-`ecab779ca25205f90607448e4543528858607c79f4d1eb796fbb91c13365aefb`.
+`17a634d5a44387ce1bfcfa20c127c3945f59e03057e664e5c9f9a363c2f46b21`.
 
 The project checker verifies the unchanged P07 proof region, two original initial
-seals, the 13/13 citation-key bijection, and complete tracked manifest coverage.
+seals, the 14/14 citation-key bijection, and complete tracked manifest coverage.
 Git-checkout and extracted-archive modes passed. Deliberately corrupting the
 extracted README and emptying the initial seal each produced the required
 failure; see AUDIT_LEDGER.md for the test-harness correction.
@@ -65,3 +65,19 @@ pixel-identically to the prior candidate at 72 dpi. Two clean two-pass builds
 still match exactly and have no warnings. Only the title command changed in
 TeX; the mathematical text and bibliography remain identical. Earlier audit
 source pins remain historical and are not rewritten to imply fresh exposure.
+
+## First-use definition and original-source credit
+
+Replaced the informal opening with a metric-generalization explanation and
+credited Bryant and Tupper at first use, citing their 2012 Advances in
+Mathematics paper (preprint arXiv:1006.1095, first posted in 2010). Its arXiv
+abstract explicitly introduces diversities; journal metadata and DOI were
+checked there. The publisher full-text endpoint returned HTTP 403; no full
+publisher-text inspection is claimed. The introductory explanation agrees
+with Definition 3.1 of the already checked Jozefiak–Shepherd v1.
+
+The current PDF has 14 references and ten pages. Two clean builds match and
+final logs are warning-free. Changed pages 1, 2, and 10 were visually checked;
+pages 3–9 render pixel-identically to the preceding title-corrected candidate
+at 75 dpi. The P07 proof region is unchanged. Earlier thirteen-reference
+audit reports are historical and retain their original pins and scope.

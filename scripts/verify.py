@@ -41,7 +41,7 @@ items = re.findall(r"\\bibitem\{([^}]+)\}", current)
 cites = set()
 for group in re.findall(r"\\cite(?:\[[^]]*\])?\{([^}]+)\}", current):
     cites.update(x.strip() for x in group.split(','))
-require(len(items) == len(set(items)) == 13 and set(items) == cites, "citation bijection")
+require(len(items) == len(set(items)) == 14 and set(items) == cites, "citation bijection")
 entries = read_hashes(root / "MANIFEST.sha256")
 in_git = (root / ".git").exists()
 if in_git:
@@ -58,7 +58,7 @@ for name, expected in entries.items():
 if in_git:
     subprocess.run(["git", "diff", "--check"], cwd=root, check=True)
     subprocess.run(["git", "diff", "--cached", "--check"], cwd=root, check=True)
-print("PASS: unchanged P07 proof region, two initial seals, 13/13 citations, %d manifest entries" % len(entries))
+print("PASS: unchanged P07 proof region, two initial seals, 14/14 citations, %d manifest entries" % len(entries))
 print("Mode: " + ("Git checkout (tracked coverage and staged/unstaged whitespace)" if in_git
                    else "extracted archive (file coverage; no Git history or whitespace check)"))
 print("Scope: artifact integrity and source continuity; not mathematical proof verification")

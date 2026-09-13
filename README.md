@@ -3,8 +3,11 @@
 **Version 0.1.0 — local release candidate. Not yet admitted or published.**
 No tag, permanent archive, or DOI exists for this release.
 
-A diversity assigns a size to each finite set of points. An ℓ₁ diversity
-measures that size by summing coordinate ranges. This paper gives a compact
+A diversity, introduced by Bryant and Tupper in
+[*Hyperconvexity and tight-span theory for diversities*](https://doi.org/10.1016/j.aim.2012.08.008)
+(2012), generalizes a metric by assigning a nonnegative value to each finite
+set of points, subject to a generalized triangle inequality. An ℓ₁ diversity
+measures this value by summing coordinate ranges. This paper gives a compact
 hypergraph whose connected spanning costs cannot be approximated well by
 any such representation.
 

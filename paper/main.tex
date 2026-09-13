@@ -39,8 +39,10 @@ algorithm's logarithmic loss from a diversity-embedding obstruction.
 \end{abstract}
 
 \section{The covering--hitting principle}
-A diversity assigns a size to each finite set of points; its $\ell_1$
-model is the sum of coordinate ranges. Here the size of a terminal set is
+A diversity, introduced by Bryant and Tupper~\cite{BT12}, generalizes a
+metric by assigning a nonnegative value to each finite set of points,
+subject to a generalized triangle inequality. An $\ell_1$ diversity measures
+this value by summing coordinate ranges. Here the value of a terminal set is
 the minimum cost of a connected supply collection spanning it. A cut indicator asks only whether terminals occur on both sides
 of a cut. When cheap supplies and expensive demands have comparable
 crossing probabilities for every cut, no nonnegative cut mixture can
@@ -614,7 +616,7 @@ and drafting. The argument above is self-contained and does not rely on a
 numerical experiment. Agent reviews are not external peer review.
 
 \clearpage
-\begin{thebibliography}{13}\small
+\begin{thebibliography}{14}\small
 \bibitem{K19} J. Kline.
 Properties of the $d$-dimensional earth mover's problem.
 \emph{Discrete Applied Mathematics} 265, 128--141, 2019.
@@ -660,5 +662,9 @@ Foundations and Trends in Theoretical Computer Science 1(4), 237--301, 2005.
 \bibitem{JRP} T. Ezra, S. Leonardi, M. Paw{\l}owski, M. Russo and S. W. Umboh.
 \emph{Universal Optimization for Non-Clairvoyant Subadditive Joint Replenishment}.
 2024. \href{https://michalpawlowski.github.io/michal-academic/publications/pdfs/03_full_paper.pdf}{Author PDF}.
+\bibitem{BT12} D. Bryant and P. F. Tupper.
+Hyperconvexity and tight-span theory for diversities.
+\emph{Advances in Mathematics} 231(6), 3172--3198, 2012.
+\href{https://doi.org/10.1016/j.aim.2012.08.008}{doi:10.1016/j.aim.2012.08.008}.
 \end{thebibliography}
 \end{document}
