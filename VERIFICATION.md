@@ -22,20 +22,20 @@ pdftoppm -r 90 -png paper/main.pdf build/pages/page
 ```
 
 Build result: two clean two-pass builds were byte-identical. Final logs contained
-no warnings, undefined references, or overfull/underfull boxes. PDF: 10 US Letter
-pages, 249789 bytes; 14 cited references. Title and author PDF metadata agree.
+no warnings, undefined references, or overfull/underfull boxes. PDF: 11 US Letter
+pages, 354426 bytes; 14 cited references. Title and author PDF metadata agree.
 The source date fixes PDF creation metadata to September 13, 2026 00:00 UTC;
-it is not a release date. Rendered pages 1–10 were individually inspected by root:
+it is not a release date. Rendered pages 1–11 were individually inspected by root:
 no clipping, overlap, broken mathematical glyphs, or displaced radicals observed.
-The bibliography occupies page 10. TeX reading order in extracted text is not
+The bibliography occupies page 11. TeX reading order in extracted text is not
 used as a substitute for rendered inspection.
 
 Paper source SHA-256:
-`6fe05e3d8688e8b56549e4a5152803eb027fa48b2c6d94367221d4d86f2cba38`.
+`8ef19cd8b90ad3ba7dc30340f8ad21aee533c526fef08e086c3b90b0f834ffdc`.
 PDF SHA-256:
-`17a634d5a44387ce1bfcfa20c127c3945f59e03057e664e5c9f9a363c2f46b21`.
+`4073aa822ca291f68c94a0e148ca3f92e10216cc6ad6065b148d3cf799fa72ed`.
 
-The project checker verifies the unchanged P07 proof region, two original initial
+The project checker verifies the P07 proof region (excluding the declared figure input), two original initial
 seals, the 14/14 citation-key bijection, and complete tracked manifest coverage.
 Git-checkout and extracted-archive modes passed. Deliberately corrupting the
 extracted README and emptying the initial seal each produced the required
@@ -51,8 +51,9 @@ This mechanical check does not judge proofs or close P1/R1.
 
 Excluded: exploratory numerical tests, source-workspace campaigns, third-party
 PDFs, build logs and rendered images (ignored build/), and authenticated portals.
-The selected P07 reports are reused only with their original scopes. No public
-push, tag, archive upload, DOI activation, or site deployment was tested or done.
+The selected P07 reports are reused only with their original scopes. The original candidate was publicly pushed with authorization. These later local
+revisions have not been pushed; no tag, archive upload, DOI activation, or site
+deployment was performed.
 
 ## Title-alignment correction
 
@@ -76,8 +77,24 @@ checked there. The publisher full-text endpoint returned HTTP 403; no full
 publisher-text inspection is claimed. The introductory explanation agrees
 with Definition 3.1 of the already checked Jozefiak–Shepherd v1.
 
-The current PDF has 14 references and ten pages. Two clean builds match and
+At that revision, the PDF had 14 references and ten pages. Two clean builds match and
 final logs are warning-free. Changed pages 1, 2, and 10 were visually checked;
 pages 3–9 render pixel-identically to the preceding title-corrected candidate
 at 75 dpi. The P07 proof region is unchanged. Earlier thirteen-reference
 audit reports are historical and retain their original pins and scope.
+
+## Reproducible q=3 illustration
+
+Added a full-page figure after the construction, bringing the PDF to eleven
+pages. Root inspected all eleven rendered pages. The figure generator produced
+byte-identical PDF and PNG artifacts in two clean builds; the paper likewise
+passed two clean two-pass builds without warnings. The figure uses TikZ and
+fix-cm; rendering uses Poppler. No filled spatial region represents the cut.
+
+The exact standard-library checker enumerates all 512 grid subsets, including
+511 nonempty sets: the maximum hitting-probability ratio is 3/2, attained by
+18 non-collinear triples. The example hits three columns and six supplies.
+The general moment constant is (2q-1)/q, equal to 5/3 only at q=3.
+See audit/Q3-FIGURE.md for the separate finite check and its exposure limits.
+The general theorem/proof text remains identical after removing only the
+single declared figure-input line from the continuity comparison.

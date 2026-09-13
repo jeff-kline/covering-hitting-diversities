@@ -34,3 +34,11 @@ history; no tag or permanent archive had been created.
 Clarified the opening description of a diversity as a generalization of a
 metric and added first-use credit to Bryant and Tupper's original 2012 paper.
 Updated the README to match. No theorem or proof changed.
+
+## Pre-tag reproducible illustration — September 13, 2026 UTC
+
+Added a q=3 construction and cut example to README and paper, with generator
+and exact enumeration. Removed the filled triangle because the cut is a set
+of points. The finite maximum 3/2 is now checked over all 512 subsets; it is
+separate from the general moment certificate (2q-1)/q. No general theorem or
+proof was changed. The PDF now has eleven pages.

@@ -1,7 +1,7 @@
 # Build and verification
 
 Requirements: Python 3.8 or later (standard library only), Git, and pdfLaTeX
-with amsmath, amssymb, amsthm, geometry, microtype, and hyperref. No solver,
+with amsmath, amssymb, amsthm, geometry, microtype, graphicx, and hyperref. No solver,
 external bibliography tool, shell escape, or package installation is needed.
 The paper uses the TeX installation's default Computer Modern fonts.
 
@@ -38,8 +38,9 @@ In an extracted archive without .git, make verify instead checks all regular
 files against the manifest; ignored build/, __pycache__, and .DS_Store are
 excluded. It skips Git history/whitespace checks there. Both modes reject
 hash mismatches and missing or extra release files. It does not
-prove the mathematics or verify external source content. There are no material
-computational claims requiring a numerical reproduction suite.
+prove the mathematics or verify external source content. It also recomputes all 512 grid subsets for the finite q=3 illustration
+and compares every count with the committed JSON record. This finite check
+does not establish the general theorem.
 
 For rendered inspection with Poppler:
 
@@ -56,3 +57,22 @@ dependency. Its script hash and result are recorded in VERIFICATION.md:
 /usr/bin/python3 ~/.codex/skills/admit-research-release/scripts/release_audit.py \
   --root . --state candidate --tag v0.1.0 --require-clean
 ```
+
+## Regenerating the illustration
+
+The paper build uses the committed figure PDF. To regenerate its TikZ source,
+PDF, PNG, and complete exact enumeration record, run:
+
+```sh
+make figures PYTHON=/usr/bin/python3 PDFLATEX=/opt/local/bin/pdflatex
+make paper PYTHON=/usr/bin/python3 PDFLATEX=/opt/local/bin/pdflatex
+make verify PYTHON=/usr/bin/python3
+```
+
+Figure generation additionally requires TikZ, fix-cm, and Poppler's pdftoppm
+(on PATH, or selected with PDFTOPPM). No Python packages are required.
+The generator checks identical PDF and PNG bytes from two clean builds.
+`scripts/affine_q3.py` alone verifies all 512 subsets using exact rational
+arithmetic; `make verify` performs this calculation without requiring TeX.
+The proof-region comparison excludes only the single declared figure-input
+line; the separately audited caption and figure are covered by the manifest.

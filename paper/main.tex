@@ -2,6 +2,7 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[letterpaper,margin=1in]{geometry}
 \usepackage{microtype}
+\usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -129,6 +130,8 @@ lines covering $A\cap X$. In particular,
 \end{equation}
 The second equality holds because each supply line meets a column in one
 point, and the $q$ horizontal lines cover the entire plane.
+
+\input{figures/affine-q3-insert.tex}
 
 \section{An inequality for every cut}
 For $T\subseteq X$, let
@@ -613,7 +616,8 @@ a claim of being the first such result.
 \paragraph{Computational assistance.}
 Codex agents assisted with the construction, literature review, proof checking
 and drafting. The argument above is self-contained and does not rely on a
-numerical experiment. Agent reviews are not external peer review.
+numerical experiment. Figure~\ref{fig:affine-q3} adds a separately
+reproducible finite check at $q=3$. Agent reviews are not external peer review.
 
 \clearpage
 \begin{thebibliography}{14}\small

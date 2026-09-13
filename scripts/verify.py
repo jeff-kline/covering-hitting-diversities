@@ -27,7 +27,10 @@ def proof_region(text):
     start, end = r"\section{Definitions and construction}", r"\paragraph{Status.}"
     require(text.count(start) == text.count(end) == 1, "unique proof-region boundaries")
     require(text.index(start) < text.index(end), "ordered proof-region boundaries")
-    return text.split(start, 1)[1].split(end, 1)[0]
+    region = text.split(start, 1)[1].split(end, 1)[0]
+    figure_insert = "\\input{figures/affine-q3-insert.tex}\n\n"
+    require(region.count(figure_insert) <= 1, "at most one declared figure insertion")
+    return region.replace(figure_insert, "")
 current = (root / "paper/main.tex").read_text()
 old = (root / "audit/p07/cold/PAPER.tex").read_text()
 require(proof_region(current) == proof_region(old), "P07 proof region differs; reopen relevant audits")
@@ -42,6 +45,9 @@ cites = set()
 for group in re.findall(r"\\cite(?:\[[^]]*\])?\{([^}]+)\}", current):
     cites.update(x.strip() for x in group.split(','))
 require(len(items) == len(set(items)) == 14 and set(items) == cites, "citation bijection")
+from affine_q3 import serialized
+require((root / "paper/figures/affine-q3-checks.json").read_text() == serialized(),
+        "exact q=3 enumeration record")
 entries = read_hashes(root / "MANIFEST.sha256")
 in_git = (root / ".git").exists()
 if in_git:
@@ -58,7 +64,7 @@ for name, expected in entries.items():
 if in_git:
     subprocess.run(["git", "diff", "--check"], cwd=root, check=True)
     subprocess.run(["git", "diff", "--cached", "--check"], cwd=root, check=True)
-print("PASS: unchanged P07 proof region, two initial seals, 14/14 citations, %d manifest entries" % len(entries))
+print("PASS: P07 proof region unchanged apart from declared figure input, two initial seals, 14/14 citations, %d manifest entries" % len(entries))
 print("Mode: " + ("Git checkout (tracked coverage and staged/unstaged whitespace)" if in_git
                    else "extracted archive (file coverage; no Git history or whitespace check)"))
-print("Scope: artifact integrity and source continuity; not mathematical proof verification")
+print("Scope: artifact integrity, source continuity, and exact q=3 enumeration; not general proof verification")

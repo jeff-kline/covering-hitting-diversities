@@ -3,7 +3,7 @@
 Current verdict: NOT YET ADMITTED.
 State: local CANDIDATE, version 0.1.0; proposed tag v0.1.0 does not yet exist.
 The candidate repository is public. No tag, permanent archive, or DOI has
-been created for this release; the title correction awaits publication.
+been created for this release; the local revisions await publication.
 
 Standard: [A Public Standard for This Work](https://jeff-kline.github.io/posts/research-program/index.html),
 version 0.4 draft, read completely during preparation on September 13, 2026 UTC.
@@ -14,8 +14,8 @@ certificate, or proof of global novelty.
 | Gate | Status | Disposition |
 |---|---|---|
 | P1: prior work and credit | PARTIAL | Closest mechanisms and exact public sources compared; compact-construction priority remains unresolved. No first existential bound or new constant claimed. See audit/PRIOR_WORK.md. |
-| A1: claim and artifact consistency | PASS | README, abstract, introduction and metadata agree; unchanged proof region; fresh proof-aware review and ten-page rendered inspection. See AUDIT_LEDGER.md and VERIFICATION.md. |
-| R1: release and stewardship | PARTIAL | Local build, citation, provenance, manifest and correction policy prepared; public repository/tag/archive/DOI and provider byte verification remain undone. |
+| A1: claim and artifact consistency | PASS | README, abstract, introduction and metadata agree; proof-region continuity apart from declared illustration input; scoped proof-aware review, separate finite-example check, and eleven-page rendered inspection. See AUDIT_LEDGER.md and VERIFICATION.md. |
+| R1: release and stewardship | PARTIAL | Local build, citation, provenance, manifest and correction policy prepared; updated public candidate/tag/archive/DOI and provider byte verification remain undone. |
 
 ## P1 rows
 
@@ -35,16 +35,19 @@ PASS: special-class upper bounds and arbitrary-hypergraph limitations.
 PASS: evidence distinguishes proof, source comparison, and AI process checks.
 PASS: title, author Jeff Kline, version, prepublication status, and license agree.
 PASS: initial attack and subsequent proof audit retained with their actual scopes.
-PASS: no material mathematical edits; source-region identity is mechanically checked.
+PASS: general theorem/proof text unchanged; continuity excludes only the declared figure input.
+PASS: added finite q=3 maximum is exhaustively checked and separately audited.
 
 ## R1 rows
 
 PASS: reproducible local build and complete tracked-file manifest.
 PASS: visible correction/withdrawal/supersession policy and publication-safe CFF.
 PASS: selected evidence provenance; no exploratory campaign bundle or source PDFs.
-PARTIAL: repository creation/default-branch publication, immutable tag, GitHub
+PASS: public repository created and original candidate published with authorization.
+PARTIAL: publication of local revisions, immutable tag, GitHub
 Release, archive metadata, resolving version DOI and provider byte identity.
-N/A: material numerical computation suite; results rest on proofs.
+PASS: exact 512-subset reproduction suite for the added finite illustration.
+General results continue to rest on proofs.
 N/A for this local task: public result-site listing; that requires a later exact
 admission bundle after archive verification, not implicit authorization here.
 

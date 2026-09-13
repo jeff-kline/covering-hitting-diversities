@@ -45,6 +45,23 @@ square-root upper bound and removal of the weighted logarithm remain
 unresolved here. The weighted greedy-bad example does not itself obstruct
 arbitrary coverage approximations.
 
+## A small example
+
+![Affine construction, covering costs, and hitting comparison at q=3](paper/figures/affine-q3.png)
+
+The green columns select `T = {(0,0), (1,0), (2,1)}`. It hits all three
+column demands and six of nine supplies, giving ratio `3/2`. Exact enumeration
+of all 512 subsets confirms that this is the maximum for `q=3`; the empty set
+has zero hits on both sides and no defined ratio. There are 18 maximizers,
+all non-collinear triples. The general moment certificate is `(2q−1)/q`,
+which is `5/3` here. This finite check does not establish the bound for other q.
+
+The [figure generator](scripts/draw_affine_q3.py) uses the
+[exact enumeration](scripts/affine_q3.py); the complete
+[512-subset record](paper/figures/affine-q3-checks.json) is included.
+Run `make figures` to regenerate the figure, or `make verify` to check the
+finite record without a TeX installation. See BUILD.md for dependencies.
+
 ## Context and credit
 
 The proof compares how expensive demands are to cover with how frequently
@@ -62,8 +79,9 @@ depend on the later transport-rigidity theorem.
 
 ## Evidence and artifacts
 
-The paper contains the proofs; no numerical experiment is needed for its
-claims. Exploratory campaign computations are excluded from this release.
+The general results rest on the proofs. The figure adds an exact, exhaustive
+check of the hitting ratio at q=3; this finite check does not replace those
+proofs. Exploratory campaign computations are excluded from this release.
 Selected P07 records preserve a sealed statement-only attack, the subsequent
 proof audit, and separate exact-source checks. Their scopes and the fresh
 release audits are recorded in [AUDIT_LEDGER.md](AUDIT_LEDGER.md).

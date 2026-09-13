@@ -115,3 +115,16 @@ mathematical change or expanded novelty claim. README and introduction agree.
 Root rechecked the affected rendering and the 14/14 citation bijection; the
 protected proof region remains identical. No public push, tag, or Release
 is authorized by this local correction alone.
+
+## Finite illustration — September 13, 2026 UTC
+
+Root added the reproducible q=3 illustration to the README and paper after
+user feedback: removed the spatial triangle, placed the universal inequality
+before the example, and checked the claimed worst cut by exact enumeration.
+A fresh-context read-only AI examiner independently recomputed all subset
+counts, maximum, and cover costs, and inspected all incidence marks. No
+must-fix finding was returned; exposure and limits are in audit/Q3-FIGURE.md.
+This is separate finite-example verification, not a general proof audit or
+independent expert review. Root owns the edits and disposition. General
+proof-region continuity excludes exactly the declared figure-input line;
+the added finite claim does not alter the general bounds or novelty scope.

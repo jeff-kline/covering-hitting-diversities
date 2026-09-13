@@ -16,6 +16,7 @@ for _ in range(2):
     with tempfile.TemporaryDirectory(prefix="covering-hitting-build-") as temp:
         work = Path(temp)
         shutil.copyfile(root / "paper/main.tex", work / "main.tex")
+        shutil.copytree(root / "paper/figures", work / "figures")
         for _ in range(2):
             result = subprocess.run([compiler, "-no-shell-escape", "-interaction=nonstopmode",
                                      "-halt-on-error", "main.tex"], cwd=work, env=env,
