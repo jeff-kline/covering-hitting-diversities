@@ -86,3 +86,19 @@ No exact earlier compact consequence was found in its inspected corpus, but
 priority and equivalent-formulation occupation remain unresolved. No source
 absence, private revision absence, or worldwide novelty is inferred. No
 mathematical edit is required by these findings.
+
+## User-found title defect and root correction — September 13, 2026 UTC
+
+The initial ten-page visual pass missed an off-center subtitle caused by
+\newline in the standard article title. The user identified it before tagging.
+Root replaced it with \\, rebuilt twice reproducibly, and inspected the
+corrected title. Rendered pages 2–10 are unchanged. No mathematics or claims
+changed; the proof-region check continues to pass. VERIFICATION.md carries
+the corrected source/PDF pins. The research-release skill now explicitly
+checks multiline title alignment. This finding corrects the earlier overly
+broad visual-QA conclusion; no old audit report is altered.
+
+The prior candidate commit was pushed to the public repository with user
+authorization. This typography correction is prepared locally and needs exact
+updated publication authorization before pushing or tagging the new commit.
+Zenodo integration confirmation is still pending; no tag or Release exists.

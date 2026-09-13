@@ -2,7 +2,8 @@
 
 Current verdict: NOT YET ADMITTED.
 State: local CANDIDATE, version 0.1.0; proposed tag v0.1.0 does not yet exist.
-No public repository, permanent archive, or DOI has been created for this release.
+The candidate repository is public. No tag, permanent archive, or DOI has
+been created for this release; the title correction awaits publication.
 
 Standard: [A Public Standard for This Work](https://jeff-kline.github.io/posts/research-program/index.html),
 version 0.4 draft, read completely during preparation on September 13, 2026 UTC.

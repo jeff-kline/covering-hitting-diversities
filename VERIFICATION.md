@@ -23,7 +23,7 @@ pdftoppm -r 90 -png paper/main.pdf build/pages/page
 
 Build result: two clean two-pass builds were byte-identical. Final logs contained
 no warnings, undefined references, or overfull/underfull boxes. PDF: 10 US Letter
-pages, 249387 bytes; 13 cited references. Title and author PDF metadata agree.
+pages, 249395 bytes; 13 cited references. Title and author PDF metadata agree.
 The source date fixes PDF creation metadata to September 13, 2026 00:00 UTC;
 it is not a release date. Rendered pages 1–10 were individually inspected by root:
 no clipping, overlap, broken mathematical glyphs, or displaced radicals observed.
@@ -31,9 +31,9 @@ The bibliography occupies page 10. TeX reading order in extracted text is not
 used as a substitute for rendered inspection.
 
 Paper source SHA-256:
-`26872f223a38a09ae9638634048d9364213c95788dc746bad49939a1c4d28fdc`.
+`310253b48026306a2dfb43f703091343992bb315767d56461653e501df5938a4`.
 PDF SHA-256:
-`6531d409331a1e9a18b8ab975a34425bd0f3bdea9128e8780c082b333fd8398c`.
+`ecab779ca25205f90607448e4543528858607c79f4d1eb796fbb91c13365aefb`.
 
 The project checker verifies the unchanged P07 proof region, two original initial
 seals, the 13/13 citation-key bijection, and complete tracked manifest coverage.
@@ -53,3 +53,15 @@ Excluded: exploratory numerical tests, source-workspace campaigns, third-party
 PDFs, build logs and rendered images (ignored build/), and authenticated portals.
 The selected P07 reports are reused only with their original scopes. No public
 push, tag, archive upload, DOI activation, or site deployment was tested or done.
+
+## Title-alignment correction
+
+The user caught a right-shifted subtitle missed by the initial visual review.
+Replacing the title's LaTeX newline command with a centered line break fixes
+the alignment. The corrected first page was rendered and visually inspected.
+The subtitle and author bounding-box centers are both 306.00 pt; the first
+line's ink center is 307.07 pt (font/microtype protrusion). Pages 2–10 render
+pixel-identically to the prior candidate at 72 dpi. Two clean two-pass builds
+still match exactly and have no warnings. Only the title command changed in
+TeX; the mathematical text and bibliography remain identical. Earlier audit
+source pins remain historical and are not rewritten to imply fresh exposure.

@@ -21,3 +21,10 @@ square-root lower bound and finite constant follow from Sketching Valuation
 Functions. The candidate makes no claim to either priority and retains the
 unresolved compact-construction priority question. The P07 audit's incomplete
 supplemental source check remains verbatim; separate source checks are recorded.
+
+## Pre-tag typography correction — September 13, 2026 UTC
+
+The public candidate's subtitle was shifted right. Corrected the LaTeX title
+line break and rebuilt the PDF; no mathematical text changed. The first
+visual review missed this defect. The previous public commit remains in Git
+history; no tag or permanent archive had been created.
