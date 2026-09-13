@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the specific version of this work that you use."
+type: article
+title: "Covering versus hitting in diversity embeddings: an affine obstruction and matching bounds"
+authors:
+  - family-names: Kline
+    given-names: Jeff
+version: 0.1.0
+repository-code: "https://github.com/jeff-kline/covering-hitting-diversities"
+license: GPL-3.0-only
+keywords:
+  - diversities
+  - hypergraph sparsest cut
+  - affine geometry
+  - coverage functions
+abstract: >-
+  A compact affine hypergraph realizes square-root diversity distortion with
+  polynomial encoding size and a specified connector-LP gap. The existential
+  lower bound and finite constant follow from earlier set-function work;
+  priority of the compact realization remains unresolved. Matching exponents
+  hold for unit-cost pairwise-intersecting supplies, not arbitrary hypergraphs.
